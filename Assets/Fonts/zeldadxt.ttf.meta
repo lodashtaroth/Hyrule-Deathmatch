@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 399188db427de4a2a8af66de87b9684b
+timeCreated: 1529719060
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Zelda DX TT (BRK)
+  fontNames:
+  - Zelda DX TT (BRK)
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
