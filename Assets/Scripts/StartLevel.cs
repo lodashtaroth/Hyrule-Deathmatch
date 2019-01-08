@@ -7,7 +7,7 @@ public class StartLevel : MonoBehaviour {
     public GameObject[] players;
     public Vector3[] positions;
     public GameObject[] weapons;
-    public Vector3[] loctaions;
+    public Vector3[] locations;
     public GameObject triforceWise;
     //  bool[] positionsTaken;
 
