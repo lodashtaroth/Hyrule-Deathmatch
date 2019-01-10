@@ -58,11 +58,11 @@ public class ShieldScript : MonoBehaviour {
 
 	}
 
-	//turns swords trigger collider on
+	//turns shield trigger collider on
 	void ShieldTrue(){
 		this.gameObject.GetComponent<BoxCollider> ().enabled = true;
 	}
-	//turns swords trigger collider off
+	//turns shield trigger collider off
 	void ShieldFalse(){
 		this.gameObject.GetComponent<BoxCollider> ().enabled = false;
 

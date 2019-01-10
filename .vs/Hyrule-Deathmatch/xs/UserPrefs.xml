@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{D14C559A-0DC3-D5A7-B835-85D64FB0D944}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InventorySystem/InventorySystem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemScripts/BowFireScript.cs">
     <Files>
       <File FileName="Assets/Scripts/FirstPersonController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ItemScripts/BowFireScript.cs" Line="41" Column="55" />
+      <File FileName="Assets/Scripts/ItemScripts/ArrowScript.cs" Line="26" Column="71" />
       <File FileName="Assets/Scripts/InventorySystem/InventorySystem.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
