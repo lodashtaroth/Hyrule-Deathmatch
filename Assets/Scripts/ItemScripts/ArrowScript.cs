@@ -6,7 +6,6 @@ using UnityEngine;
 public class ArrowScript : MonoBehaviour
 {
     public float myArrowSpeed = 0.5f;
-
     public float myDeathTime = 3f;
 
     Rigidbody myRigidbody;
@@ -19,11 +18,17 @@ public class ArrowScript : MonoBehaviour
         Destroy(gameObject, myDeathTime);
     }
 
+    void Update()
+    {
+        myRigidbody.AddForce(myRigidbody.transform.forward * myArrowSpeed * 10);
+    }
+
 
     // We will simply move our arrow down at our given speed.
     void FixedUpdate()
     {
-        myRigidbody.MovePosition(transform.position + (Vector3.forward * myArrowSpeed * Time.deltaTime));
+       // myRigidbody.MovePosition(transform.position + (Vector3.forward * myArrowSpeed * Time.deltaTime));
+
     }
 
     // This handles collisions with enemies.

@@ -161,8 +161,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fire: Fire1_P1
-  myArrow: {fileID: 2174921807989390677, guid: bd2c2e4bb2536454caad1abf04a18c25, type: 3}
+  firingCharge: 0
+  firingCooldown: 2
+  fireChargeCount: 0.5
+  myArrow: {fileID: 1180416311900274799, guid: b2cb11db9e3b64785b2e6f71ebed148c, type: 3}
+  arrowReady: 0
+  canFire: 0
+  isFiring: 0
   inputEnabled: 0
+  currentState: 0
 --- !u!1001 &528823611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -192,19 +199,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa689e737a1571b44b9df6e302ee361c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.23039728
+      value: -0.22867005
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa689e737a1571b44b9df6e302ee361c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9631541
+      value: 0.9559335
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa689e737a1571b44b9df6e302ee361c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0322797
+      value: 0.042835712
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa689e737a1571b44b9df6e302ee361c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.13494223
+      value: -0.17907065
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa689e737a1571b44b9df6e302ee361c, type: 3}
       propertyPath: m_RootOrder
@@ -216,7 +223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa689e737a1571b44b9df6e302ee361c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 195.95099
+      value: 201.22
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa689e737a1571b44b9df6e302ee361c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -573,8 +580,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fire: Fire1_P1
+  firingCharge: 0
+  firingCooldown: 2
+  fireChargeCount: 0.5
   myArrow: {fileID: 1180416311900274799, guid: b2cb11db9e3b64785b2e6f71ebed148c, type: 3}
+  arrowReady: 0
+  canFire: 0
+  isFiring: 0
   inputEnabled: 0
+  currentState: 0
 --- !u!1 &1221068465 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1643744188725492, guid: ab59447432f75498c8324cd515c275aa,

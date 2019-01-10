@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/WeaponTestScene/BowTestScene.unity
-=======
-- path: Assets/Scenes/Fps4pMultiSteve.unity
->>>>>>> 052595e872f60ee3fdf4bb0f4be0fe34070f25a9
   isLoaded: 1
   isActive: 1
