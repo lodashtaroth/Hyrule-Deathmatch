@@ -16,7 +16,7 @@ public class BowFireScript : MonoBehaviour
     public GameObject myArrow;
 
     public bool arrowReady;
-    public bool canFire;
+    public static bool canFire;
     public bool isFiring;
     public bool inputEnabled;
 
@@ -84,10 +84,13 @@ public class BowFireScript : MonoBehaviour
         if (Input.GetButton(Fire) && canFire)
         {
             firingCharge += Time.deltaTime;
+            //anim.SetBool("Aiming", true);
         } 
         else if (Input.GetButtonUp(Fire) && firingCharge < fireChargeCount)
         {
             firingCharge = 0;
+            //anim.SetBool("Aiming", false);
+
         }
 
         if (firingCharge >= fireChargeCount)
