@@ -19,20 +19,13 @@ public class Inventory : MonoBehaviour
     public GameObject slot1;
     public GameObject slot2;
 
-    [SerializeField]
-    private int check = 0;
-    //public Item[] itemsToPickup;
+    //[SerializeField]
+    //private int check = 0;
 
     public void Awake()
     {
         item1 = null;
         item2 = null;
-
-        //shield.SetActive(false);
-        //bomb.SetActive(false);
-        //bow.SetActive(false);
-        //hookshot.SetActive(false);
-        //sword.SetActive(false);
     }
     private void Start()
     {
@@ -44,16 +37,16 @@ public class Inventory : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Item" && Input.GetButton("Fire1_P1"))
+        if (other.tag == "Item" && Input.GetKey(KeyCode.Q))
         {
-            if(slot1 != null)
+            if (slot1 != null)
             {
                 slot1.SetActive(false);
             }
-            
-            if(other.name == "Shield_Item")
+
+            if (other.name == "Shield_Item")
             {
                 shield.SetActive(true);
                 slot1 = shield;
@@ -78,35 +71,44 @@ public class Inventory : MonoBehaviour
                 sword.SetActive(true);
                 slot1 = sword;
             }
-            
-            item1 = slot1.GetComponent<Item>();
+
+            item1 = slot1.GetComponent<ItemPickup>().item;
         }
-        if (other.tag == "Item" && Input.GetButton("Fire2_P1"))
+        if (other.tag == "Item" && Input.GetKey(KeyCode.E))
         {
 
+            if (slot2 != null)
+            {
+                slot2.SetActive(false);
+            }
+            if (other.name == "Shield_Item")
+            {
+                shield.SetActive(true);
+                slot2 = shield;
+            }
+            if (other.name == "Bomb_Item")
+            {
+                bomb.SetActive(true);
+                slot2 = bomb;
+            }
+            if (other.name == "Bow_Item")
+            {
+                bow.SetActive(true);
+                slot2 = bow;
+            }
+            if (other.name == "Hookshot")
+            {
+                hookshot.SetActive(true);
+                slot2 = hookshot;
+            }
+            if (other.name == "Sword_Item")
+            {
+                sword.SetActive(true);
+                slot2 = sword;
+            }
 
-            item2 = other.GetComponent<Item>();
+            item2 = slot2.GetComponent<ItemPickup>().item;
         }
-
-
-
     }
-
-    IEnumerator ItemSetter(string item)
-    {
-        check++;
-        if(item == "Bomb")
-        {
-
-        }
-
-
-
-        yield return null;
-        StopCoroutine(ItemSetter(item));
-    }
-    
-
-
-
 }
+
