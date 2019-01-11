@@ -65,6 +65,7 @@
     <Compile Include="Assets\Hearts\HeartScripts\HealthBarTester.cs" />
     <Compile Include="Assets\Hearts\HeartScripts\PlayerHealth.cs" />
     <Compile Include="Assets\Hearts\HeartScripts\Rules.cs" />
+    <Compile Include="Assets\Scripts\BowAnim.cs" />
     <Compile Include="Assets\Scripts\Cameras\DungeonCamera.cs" />
     <Compile Include="Assets\Scripts\Cameras\DungeonCamMouse.cs" />
     <Compile Include="Assets\Scripts\Cameras\FollowCamera.cs" />

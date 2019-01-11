@@ -157,19 +157,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 161851683}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7d4d50a9af924ab4a242424fef300c0, type: 3}
+  m_Script: {fileID: 11500000, guid: f53fa3bb5b46c4601914add23b188b29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Fire: Fire1_P1
   firingCharge: 0
   firingCooldown: 2
-  fireChargeCount: 0.5
-  myArrow: {fileID: 1180416311900274799, guid: b2cb11db9e3b64785b2e6f71ebed148c, type: 3}
+  fireChargeCount: 1
+  aiming: 0
   arrowReady: 0
-  canFire: 0
   isFiring: 0
-  inputEnabled: 0
-  currentState: 0
+--- !u!95 &161851686
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161851683}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3fd687234128f4538949eb4aada6198e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &528823611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -183,11 +199,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: fa689e737a1571b44b9df6e302ee361c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa689e737a1571b44b9df6e302ee361c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.43018785
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa689e737a1571b44b9df6e302ee361c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -195,7 +211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa689e737a1571b44b9df6e302ee361c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.013327656
+      value: -0.01332766
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa689e737a1571b44b9df6e302ee361c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -500,6 +516,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4478126418776514, guid: ab59447432f75498c8324cd515c275aa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.212
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114423184377246048, guid: ab59447432f75498c8324cd515c275aa, type: 3}
     - {fileID: 114416411535202394, guid: ab59447432f75498c8324cd515c275aa, type: 3}
@@ -561,7 +581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942498968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1221068472}
@@ -585,7 +605,6 @@ MonoBehaviour:
   fireChargeCount: 0.5
   myArrow: {fileID: 1180416311900274799, guid: b2cb11db9e3b64785b2e6f71ebed148c, type: 3}
   arrowReady: 0
-  canFire: 0
   isFiring: 0
   inputEnabled: 0
   currentState: 0
