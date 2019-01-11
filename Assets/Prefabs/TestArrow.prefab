@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4643399029174431259}
   - component: {fileID: 2652483334824657959}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: TestArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,6 +57,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myArrowSpeed: 20
   myDeathTime: 3
+  arrowAudio: {fileID: 0}
 --- !u!23 &2315786615713799480
 MeshRenderer:
   m_ObjectHideFlags: 0
