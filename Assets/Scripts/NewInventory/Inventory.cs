@@ -7,6 +7,8 @@ public class Inventory : MonoBehaviour
     public Item item1;
     public Item item2;
 
+    [SerializeField]
+    private int check = 0;
     public Item[] itemsToPickup;
 
     public void Awake()
@@ -36,7 +38,37 @@ public class Inventory : MonoBehaviour
 
             item2 = other.GetComponent<Item>();
 
+            for (int i = 0; i < itemsToPickup.Length; i++)
+            {
+                switch (check)
+                {
+                    case 0:
+                        check = 0;
+
+                        check++;
+                        break;
+                    case 1:
+                        check = 1;
+
+                        check++;
+                        break;
+                    case 2:
+                        check = 2;
+
+                        check++;
+                        break;
+                    case 3:
+                        check = 3;
+                        check = 0;
+                        break;
+                }
+
+            }
+
 
         }
+
+
+
     }
 }

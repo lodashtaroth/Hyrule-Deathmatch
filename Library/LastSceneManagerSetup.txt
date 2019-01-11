@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/WeaponTestScene/BowTestScene.unity
+- path: Assets/Scenes/InventoryTest.unity
   isLoaded: 1
   isActive: 1
