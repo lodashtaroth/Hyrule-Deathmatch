@@ -1,11 +1,11 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{D14C559A-0DC3-D5A7-B835-85D64FB0D944}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemScripts/Bow/BowFireScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemScripts/Bow/BowAnim.cs">
     <Files>
       <File FileName="Assets/Scripts/FirstPersonController.cs" Line="1" Column="1" />
       <File FileName="../../../Dropbox/Unity/2D Adventure Clone/Assets/Scripts/CharacterMovement.cs" Line="238" Column="23" />
-      <File FileName="Assets/Scripts/walking.cs" Line="31" Column="9" />
       <File FileName="Assets/Scripts/ItemScripts/Bow/BowFireScript.cs" Line="96" Column="48" />
+      <File FileName="Assets/Scripts/ItemScripts/Bow/BowAnim.cs" Line="58" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
