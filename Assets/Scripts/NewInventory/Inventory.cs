@@ -79,7 +79,7 @@ public class Inventory : MonoBehaviour
                 slot1 = sword;
             }
             
-            item1 = other.GetComponent<Item>();
+            item1 = slot1.GetComponent<Item>();
         }
         if (other.tag == "Item" && Input.GetButton("Fire2_P1"))
         {
