@@ -883,9 +883,7 @@ GameObject:
   - component: {fileID: 975537598}
   - component: {fileID: 975537597}
   - component: {fileID: 975537596}
-  - component: {fileID: 975537595}
   - component: {fileID: 975537593}
-  - component: {fileID: 975537592}
   m_Layer: 0
   m_Name: P1 (Steve Testing)
   m_TagString: P1
@@ -967,36 +965,6 @@ CapsuleCollider:
   m_Height: 1.7
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: -0.4}
---- !u!114 &975537595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975537591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce9d3ac89819f4b7ea4ca8fe6529a1c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBarSlider: {fileID: 0}
-  magicBarSlider: {fileID: 0}
-  heart1: {fileID: 0}
-  heart2: {fileID: 0}
-  heart3: {fileID: 0}
-  health: 0
-  heart: 3
-  rupees: 0
-  rupeesText: {fileID: 0}
-  myDeathEffect: {fileID: 1632416229561200, guid: b03bbad1d146f45488367a1281b0823b,
-    type: 3}
-  hitAudio: {fileID: 0}
-  deathAudioSource: {fileID: 0}
-  rupeeAudioSource: {fileID: 0}
-  GoObjects:
-  - {fileID: 0}
-  shieldScript: {fileID: 110440368}
-  isBlocking: 0
 --- !u!114 &975537593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1031,32 +999,6 @@ MonoBehaviour:
   jumpAudioSource: {fileID: 0}
   inputEnabled: 1
   Forward: 273
---- !u!114 &975537592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975537591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 963ff6bb5c4cf67439ae24a750cd6f84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemGrab: {fileID: 0}
-  Item1: {fileID: 0}
-  Item2: {fileID: 0}
-  SlotGUIitem1: {fileID: 0}
-  SlotGUIitem2: {fileID: 0}
-  pickupText: {fileID: 0}
-  pickupLeft: 0
-  pickupRight: 0
-  action: Fire3_P1
-  myWeaponL: {fileID: 0}
-  weaponOnGround: {fileID: 0}
-  Inventory:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &989477799
 GameObject:
   m_ObjectHideFlags: 0

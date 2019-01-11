@@ -45,7 +45,7 @@ public class ItemGrab : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "P1" /*&& pickupLeft == true && pickupRight == true*/)
+        if (other.gameObject.tag == "P1" && pickupLeft == true && pickupRight == true)
         {
             myWeapon.SetActive(true);
             weaponOnGround.SetActive(false);
