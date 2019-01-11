@@ -157,6 +157,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 778375395}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &110440368 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 110440368, guid: 401a8de4a1ce5ec4b82d48ca162340ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 778375395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110440367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2f1e55925984cd3980732a0086ee88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &116964854
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,9 +560,8 @@ GameObject:
   m_Component:
   - component: {fileID: 264205065}
   - component: {fileID: 264205067}
-  - component: {fileID: 264205066}
   - component: {fileID: 264205068}
-  - component: {fileID: 264205069}
+  - component: {fileID: 264205066}
   m_Layer: 0
   m_Name: Shield_Item
   m_TagString: Item
@@ -581,18 +592,16 @@ Transform:
 --- !u!114 &264205066
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114314531208142926, guid: db8326ac18d7f92428ae805d64169268,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264205064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c73799cc37699594282b3a58162e4b2a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dbdbd894af3ae841a05a7f6e9453d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemIcon: {fileID: 21300000, guid: 5096ee04f5dd2f146809952df25e8340, type: 3}
-  ItemName: Shield
+  item: {fileID: 11400000, guid: d2bf0123a2d710d4ba4ee3b9584d7d4b, type: 2}
 --- !u!65 &264205067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -605,7 +614,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.28, z: 0.27}
+  m_Size: {x: 2, y: 1.37, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &264205068
 MonoBehaviour:
@@ -620,22 +629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
---- !u!114 &264205069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264205064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b0b862e8f088479a935c01fc7631283, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myWeapon: {fileID: 110440367}
-  weaponOnGround: {fileID: 264205064}
-  pickupLeft: 0
-  pickupRight: 0
 --- !u!1 &335823535 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1568944487306682, guid: f52f4a3e018434c1fa5c70e2d61a4e85,
@@ -1102,9 +1095,8 @@ GameObject:
   m_Component:
   - component: {fileID: 643395830}
   - component: {fileID: 643395832}
-  - component: {fileID: 643395831}
   - component: {fileID: 643395833}
-  - component: {fileID: 643395834}
+  - component: {fileID: 643395831}
   m_Layer: 0
   m_Name: Bomb_Item
   m_TagString: Item
@@ -1134,18 +1126,16 @@ Transform:
 --- !u!114 &643395831
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114372474691987648, guid: db8326ac18d7f92428ae805d64169268,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643395829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bb3c409c3a95ee4fa3c6fb582a10f79, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dbdbd894af3ae841a05a7f6e9453d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemIcon: {fileID: 21300000, guid: cb66f7926da794d4f9a69f7804aa818f, type: 3}
-  ItemName: Bomb
+  item: {fileID: 11400000, guid: ab0d8063f8090b14e8457947e592b9c2, type: 2}
 --- !u!65 &643395832
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1158,7 +1148,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.22, y: 0.27, z: 0.15}
+  m_Size: {x: 0.75, y: 0.27, z: 0.75}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &643395833
 MonoBehaviour:
@@ -1173,22 +1163,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
---- !u!114 &643395834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643395829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b0b862e8f088479a935c01fc7631283, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myWeapon: {fileID: 989477799}
-  weaponOnGround: {fileID: 643395829}
-  pickupLeft: 0
-  pickupRight: 0
 --- !u!1 &651111691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,9 +1397,49 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: healthBarSlider
+      value: 
+      objectReference: {fileID: 948674659}
+    - target: {fileID: 0}
+      propertyPath: heart1
+      value: 
+      objectReference: {fileID: 335823535}
+    - target: {fileID: 0}
+      propertyPath: heart2
+      value: 
+      objectReference: {fileID: 2022732276}
+    - target: {fileID: 0}
+      propertyPath: heart3
+      value: 
+      objectReference: {fileID: 2032842639}
+    - target: {fileID: 0}
+      propertyPath: rupeesText
+      value: 
+      objectReference: {fileID: 1458077758}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SlotGUIitem1
+      value: 
+      objectReference: {fileID: 1325796964}
+    - target: {fileID: 0}
+      propertyPath: SlotGUIitem2
+      value: 
+      objectReference: {fileID: 879152139}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 975537591, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
       propertyPath: m_Name
       value: P1 (Steve Testing)
+      objectReference: {fileID: 0}
+    - target: {fileID: 110440367, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 975537594, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1471,38 +1485,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 975537595, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
-      propertyPath: healthBarSlider
-      value: 
-      objectReference: {fileID: 948674659}
-    - target: {fileID: 975537595, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
-      propertyPath: heart1
-      value: 
-      objectReference: {fileID: 335823535}
-    - target: {fileID: 975537595, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
-      propertyPath: heart2
-      value: 
-      objectReference: {fileID: 2022732276}
-    - target: {fileID: 975537595, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
-      propertyPath: heart3
-      value: 
-      objectReference: {fileID: 2032842639}
-    - target: {fileID: 975537595, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
-      propertyPath: rupeesText
-      value: 
-      objectReference: {fileID: 1458077758}
     - target: {fileID: 975537593, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
       propertyPath: turningSpeed
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 975537592, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
-      propertyPath: SlotGUIitem1
-      value: 
-      objectReference: {fileID: 1325796964}
-    - target: {fileID: 975537592, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
-      propertyPath: SlotGUIitem2
-      value: 
-      objectReference: {fileID: 879152139}
     - target: {fileID: 1431384587, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1511,6 +1497,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: dd7ca29d1c0064b58a74dbf92758619b, type: 2}
+    - target: {fileID: 989477799, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119635510, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 579532649, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.39
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 401a8de4a1ce5ec4b82d48ca162340ee, type: 3}
 --- !u!4 &791215930 stripped
@@ -1833,9 +1831,8 @@ GameObject:
   m_Component:
   - component: {fileID: 966474515}
   - component: {fileID: 966474517}
-  - component: {fileID: 966474516}
   - component: {fileID: 966474518}
-  - component: {fileID: 966474519}
+  - component: {fileID: 966474516}
   m_Layer: 0
   m_Name: Bow_Item
   m_TagString: Item
@@ -1866,18 +1863,16 @@ Transform:
 --- !u!114 &966474516
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114437134731403318, guid: db8326ac18d7f92428ae805d64169268,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966474514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 630e2fb582ffaae43bf221ed7664bf31, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dbdbd894af3ae841a05a7f6e9453d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemIcon: {fileID: 21300000, guid: 58486c02dcaa74c458b50fb0e97ef524, type: 3}
-  ItemName: Bow
+  item: {fileID: 11400000, guid: ce059da6d3fbf4346a357c397e030b22, type: 2}
 --- !u!65 &966474517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1905,28 +1900,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
---- !u!114 &966474519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966474514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b0b862e8f088479a935c01fc7631283, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myWeapon: {fileID: 0}
-  weaponOnGround: {fileID: 0}
-  pickupLeft: 0
-  pickupRight: 0
 --- !u!1 &975537591 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 975537591, guid: 401a8de4a1ce5ec4b82d48ca162340ee,
     type: 3}
   m_PrefabInstance: {fileID: 778375395}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &975537593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975537591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce9d3ac89819f4b7ea4ca8fe6529a1c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarSlider: {fileID: 948674659}
+  magicBarSlider: {fileID: 0}
+  heart1: {fileID: 335823535}
+  heart2: {fileID: 2022732276}
+  heart3: {fileID: 2032842639}
+  health: 0
+  heart: 3
+  rupees: 0
+  rupeesText: {fileID: 1458077758}
+  myDeathEffect: {fileID: 1632416229561200, guid: b03bbad1d146f45488367a1281b0823b,
+    type: 3}
+  hitAudio: {fileID: 0}
+  deathAudioSource: {fileID: 0}
+  rupeeAudioSource: {fileID: 0}
+  GoObjects:
+  - {fileID: 0}
+  shieldScript: {fileID: 110440368}
+  isBlocking: 0
+--- !u!114 &975537595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975537591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6535b4651a7c054f8db07ef77b7ad9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item1: {fileID: 0}
+  item2: {fileID: 0}
+  shield: {fileID: 110440367}
+  bomb: {fileID: 0}
+  bow: {fileID: 0}
+  hookshot: {fileID: 0}
+  sword: {fileID: 2119635510}
+  slot1: {fileID: 0}
+  slot2: {fileID: 0}
+  check: 0
 --- !u!1 &989475335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1978,12 +2009,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &989477799 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 989477799, guid: 401a8de4a1ce5ec4b82d48ca162340ee,
-    type: 3}
-  m_PrefabInstance: {fileID: 778375395}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1052767759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,7 +2207,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1132712281}
   - component: {fileID: 1132712282}
-  - component: {fileID: 1132712285}
   - component: {fileID: 1132712283}
   - component: {fileID: 1132712284}
   m_Layer: 0
@@ -2256,27 +2280,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1132712280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b0b862e8f088479a935c01fc7631283, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dbdbd894af3ae841a05a7f6e9453d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myWeapon: {fileID: 0}
-  weaponOnGround: {fileID: 0}
-  pickupLeft: 0
-  pickupRight: 0
---- !u!114 &1132712285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132712280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a260c62e3b9a4fe9953ce81927d2241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemIcon: {fileID: 0}
-  ItemName: Hookshot
+  item: {fileID: 11400000, guid: 1777a6f47986de64fa28c4f42c6b2469, type: 2}
 --- !u!1 &1155159452
 GameObject:
   m_ObjectHideFlags: 0
@@ -3886,9 +3893,8 @@ GameObject:
   - component: {fileID: 1891719659}
   - component: {fileID: 1891719658}
   - component: {fileID: 1891719657}
-  - component: {fileID: 1891719656}
   - component: {fileID: 1891719660}
-  - component: {fileID: 1891719661}
+  - component: {fileID: 1891719656}
   m_Layer: 0
   m_Name: Sword_Item
   m_TagString: Item
@@ -3914,18 +3920,16 @@ Transform:
 --- !u!114 &1891719656
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114713875259044088, guid: db8326ac18d7f92428ae805d64169268,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891719654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc82fef6e0db994990e7baf4a99b602, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dbdbd894af3ae841a05a7f6e9453d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemIcon: {fileID: 21300000, guid: 08ad604f2b157974d895101dcc157d71, type: 3}
-  ItemName: MasterSword
+  item: {fileID: 11400000, guid: d3811d9cba5d3484dbc3e2ab9471dbb8, type: 2}
 --- !u!65 &1891719657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3938,7 +3942,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.15028101, y: 2.6884294, z: 0.7924063}
+  m_Size: {x: 2.55, y: 2.6884294, z: 2.23}
   m_Center: {x: 0.0001405105, y: 0.5942147, z: 0}
 --- !u!23 &1891719658
 MeshRenderer:
@@ -4003,22 +4007,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
---- !u!114 &1891719661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891719654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b0b862e8f088479a935c01fc7631283, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myWeapon: {fileID: 2119635510}
-  weaponOnGround: {fileID: 1891719654}
-  pickupLeft: 0
-  pickupRight: 0
 --- !u!1 &1895898529
 GameObject:
   m_ObjectHideFlags: 0
