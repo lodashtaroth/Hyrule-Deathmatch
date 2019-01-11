@@ -53,6 +53,7 @@ public class BowAnim : MonoBehaviour
         } 
             else 
         {
+            anim.SetBool("Aiming", true);
             arrowReady = false;
         }
 
@@ -68,7 +69,6 @@ public class BowAnim : MonoBehaviour
         if (aiming)
         {
             anim.SetBool("Aiming", true);
-
         }
         else
         {
